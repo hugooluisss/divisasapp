@@ -234,4 +234,7 @@ $( document ).ready(function(){
 	    	});
 	    }
     });
+    
+    
+    miAdmob();
 });

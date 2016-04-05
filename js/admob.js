@@ -33,25 +33,3 @@ function showAd( bshow ) {
 		alert('El plugin AdMob no esta listo/disponible.');
 	} 
 }
-
-
-function onDeviceReady() {
-      document.removeEventListener('deviceready', onDeviceReady, false);
-
-      // Set AdMobAds options:
-      admob.setOptions({
-        publisherId:          "ca-app-pub-XXXXXXXXXXXXXXXX/BBBBBBBBBB",  // Required
-        interstitialAdId:     "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII",  // Optional
-        tappxIdiOs:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
-        tappxIdAndroid:       "ca-app-pub-1192384953958744/1423692315",        // Optional
-        tappxShare:           0.5                                        // Optional
-      });
-
-      // Start showing banners (atomatic when autoShowBanner is set to true)
-      admob.createBannerView();
-
-      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-      admob.requestInterstitial();
-    }
-
-    document.addEventListener("deviceready", onDeviceReady, false);

@@ -43,7 +43,7 @@
 		<!--  
 		 <gap:plugin name="com.phonegap.plugins.barcodescanner" />  
 		-->  
-		<gap:plugin name="com.admob.plugin" version="3.0.0" source="plugins.cordova.io" />
+		< gap:plugin name="com.admob.google" source="plugins.cordova.io" version="2.0.14"/ >
 		
 		<!-- Define app icon for each platform. -->  
 		<icon src="icon.png" />  

@@ -19,8 +19,39 @@
 				<a class="navbar-brand" href="#">Conversor de divisas</a>
 			</div>
 		</nav>
-		<div id="modulo">
+		<div id="modulo" class="container">
+			<form role="form" id="frmCalcular" class="form-horizontal" onsubmit="javascript: return false;">
+			<div class="jumbotron">
+				<div class="alert alert-info">Selecciona las divisas</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-4">
+							<input class="form-control" id="txtCantidad" name="txtCantidad" value="1"/>
+						</div>
+						<div class="col-xs-8">
+							<select id="selOrigen" name="selOrigen" class="form-control">
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center"> => </div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<select id="selDestino" name="selDestino" class="form-control">
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<button id="btnConvertir" class="btn btn-success">Convertir</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			
+			<div class="alert alert-success text-center" id="dvResultado">
+			</div>
 		</div>
 		
 		<script type="text/javascript" src="cordova.js"></script>

@@ -43,8 +43,7 @@
 		<!--  
 		 <gap:plugin name="com.phonegap.plugins.barcodescanner" />  
 		-->  
-		<preference name="android-build-tool" value="gradle" /> 
-		<gap:plugin name="cordova-plugin-admobpro" source="npm" />
+		<plugin name="com.admob.google" spec="4.0.8" source="pgb" />
 		
 		<!-- Define app icon for each platform. -->  
 		<icon src="icon.png" />  
